@@ -23,8 +23,10 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
     "gulp-htmlmin": "^2.0.0",
     "gulp-minify-inline": "^0.2.1",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
   }
 }
