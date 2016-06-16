@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid red !important;
-}
+}*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,6 +10,8 @@
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 input {
@@ -33,6 +35,8 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
+  /*Make movers in seperate layers to avoid painting in crolling.*/
+  will-change: transform;
 }
 
 .randomPizzaContainer {
@@ -48,4 +52,6 @@ form {
 
  .container {
   background-color: rgba(240, 60, 60, 0.8);
+  /*Make container in seperate layers to avoid painting in scrolling.*/
+  will-change: transform;
 }
